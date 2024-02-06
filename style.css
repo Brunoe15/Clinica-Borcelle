@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --cor1: #f74758;
+    --cor2: #F2E3D5;
+    --cor3: #080409;
+    --cor4: #024959;
+    --cor5: #96E1F2;
+    --cor6: #F2F2F2;
+    --cor7: #c7cfcc;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Cabeçalho da página*/
+.cabeçalho{
+    width: 100%;
+    height: 50px;
+    background-color: #f74758;
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    position: fixed;
+}
+#navegar{
+    height: 100%;
+    width: 150px;
+    background-color: var(--cor1);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--cor2);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+#navegar:hover{
+    background-color: var(--cor2);
+    transition: 0.3s;
+    color: var(--cor1);
+}
+#img_navegar{
+    height: 100%;
+    margin: 0 10px 0 10px;
+}
+
+/*capa da página*/
+main{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor4);
+}
+.inicio{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+section h1{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    color: var(--cor5);
+}
+section b{
+    color: var(--cor1);
+}
+section p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    color: var(--cor2);
+    margin-bottom: 20px;
+}
+section a{
+    border: none;
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor6);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor4);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+section a:hover{
+    background-color: var(--cor2);
+}
+section a:active{
+    transform: scale(0.86);
+}
+
+/*Sobre*/
+.sobre{
+    height: 90vh;
+    background-color: var(--cor6);
+    display: flex;
+}
+.img_sobre{
+    width: 55%;
+    height: 100%;
+    padding: 60px 30px 30px 30px;
+}
+.img_sobre img{
+    border-radius: 36px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.txt_sobre{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.txt_sobre h1{
+    font-size: 30px;
+    color: var(--cor1);
+}
+.txt_sobre p{
+    font-size: 18px;
+    color: var(--cor3);
+}
+.txt_sobre img{
+    width: 60px;
+    margin-left: 43%;
+}
+
+/*Cards de informações sobre a clinica*/
+.cards{
+    height: 60vh;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #F2F2F2;
+}
+#card{
+    width: 25%;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    border-radius: 30px 30px 30px 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: white;
+}
+#card h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor2);
+    background-color: var(--cor4);
+    border-radius: 30px 30px 0 0;
+    padding: 10px;
+}
+#card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+#card p{
+    padding: 10px;
+}
+.div_bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--cor6);
+}
+#botao_agendar{
+    border: none;
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor4);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#botao_agendar:active{
+    transform: scale(0.86);
+}
+
+/*Serviços*/
+.serviços{
+    height: 100vh;
+    background-color: var(--cor6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviços h1{
+    padding: 40px 0 40px 0;
+    font-size: 40px;
+    color: var(--cor1);
+}
+aside section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 72vh;
+}
+#serviço{
+    height: 100%;
+    width: 22.5%;
+    border-radius: 30px 30px 30px 0px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: white;
+}
+#serviço:hover{
+    height: 105%;
+    width: 23%;
+    transition: 0.1s;
+    cursor: pointer;
+}
+#serviço img{
+    width: 100%;
+    height: 35%;
+    border-radius: 30px 30px 0 0;
+}
+#serviço h1 {
+    margin-top: -27px;
+    background-color: var(--cor4);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor2);
+}
+#serviço p{
+    width: 100%;
+    padding: 10px;
+    color: var(--cor3);
+}
+
+/*Horários de atendimentos*/
+.horarios{
+    height: 40vh;
+    background-color: var(--cor6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.horarios h1{
+    font-size: 40px;
+    color: var(--cor1);
+    margin-bottom: 30px;
+}
+.horarios table th{
+    background-color: var(--cor1);
+    color: var(--cor6);
+}
+.horarios table #th1{
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+.horarios table tr{
+    background-color: var(--cor7);
+    color: var(--cor3);
+    text-align: center;
+}
+.div_bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--cor6);
+}
+#botao_agendar{
+    border: none;
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor4);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#botao_agendar:active{
+    transform: scale(0.86);
+}
+
+/*Depoimentos*/
+.depoimentos{
+    background-color: var(--cor1);
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    gap: 50px;
+}
+.depoimentos h1{
+    font-size: 55px;
+    color: var(--cor6);
+}
+#depoimento{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: var(--cor6);
+    border-radius: 30px 30px 30px 0;
+    padding: 20px;
+}
+#depoimento img{
+    width: 30%;
+    filter:drop-shadow(0px 4px 4px #080409)
+}
+#depoimento h1{
+    color: var(--cor3);
+    font-size: 30px;
+}
+#depoimento p{
+    color: var(--cor3);
+    text-align: start;
+}
+
+/*Contato*/
+.contato{ 
+    height: 200vh;
+    background-color: var(--cor6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contato h1{
+    font-size: 50px;
+    color: var(--cor1);
+    margin-top: 50px;
+}
+.map_contat{
+    padding: 20px;
+}
+.map_contat iframe{
+    height: 400px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.map_contat #contatos{
+    height: 100%;
+    width: 50%;
+    font-size: 23px;
+    color: var(--cor3);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.map_contat strong{
+    color: var(--cor1);
+}
+.map_contat #telefone{
+    width: 40px;
+}
+.map_contat #whatsapp{
+    width: 35px;
+    height: 35px;
+}
+.map_contat #email{
+    width: 35px;
+    height: 35px;
+}
+.map_contat #localizacao{
+    width: 35px;
+    height: 35px;
+}
+#contato_block{
+    display: flex;
+    gap: 15px;
+}
+
+/*Formulário*/
+.formulario{
+    padding: 20px;
+    width: 40%;
+    height: 40%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--cor4);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.formulario input{
+    background-color: var(--cor6);
+    height: 50px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.formulario input::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.formulario textarea{
+    background-color: var(--cor6);
+    width: 80%;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.formulario textarea::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.formulario div{
+    display: flex;
+    gap: 10px;
+}
+.formulario div button{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+.formulario div button:hover{
+    background-color: var(--cor7);
+}
+
+/*Rodapé*/
+.rodape{
+    height: 28vh;
+    background-color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.rodape img{
+    width: 60px;
+    margin-bottom: 10px;
+}
+.rodape p{
+    font-size: 17px;
+    color: var(--cor4);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.rodape #sociais_dev{
+    display: flex;
+    gap: 10px;
+}
+.rodape #sociais_dev img{
+    width: 25px;
+}
+.rodape #sociais_dev img:hover{
+    width: 28px;
+    transition: 0.2s;
+}
